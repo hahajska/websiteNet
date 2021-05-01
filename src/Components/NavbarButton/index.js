@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./styles/NavbarButton.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import MountainImage from "../../images/moutains.jpg";
 
 export default function NavbarButton() {
   const [isActive, setIsActive] = useState(false);
@@ -50,7 +52,7 @@ export default function NavbarButton() {
     },
     show: {
       x: 0,
-      y: "-100vh",
+      y: "-110vh",
       transition: {
         delay: 0.9,
         duration: 0.75,
@@ -82,12 +84,25 @@ export default function NavbarButton() {
         onClick={() => setIsOpen(!isOpen)}
       ></motion.div>{" "}
       <motion.div
-        className="wrapperList"
+        className="wrapperList grid grid-cols-2"
         variants={AnimaceNavbar3}
         animate={isActive ? "show" : "hidden"}
         initial="hidden"
         onClick={() => setIsOpen(!isOpen)}
-      ></motion.div>
+      >
+        <div className=" menuList flex justify-center items-center text-center">
+          <ul>
+            <li>Home</li>
+            <li>
+              <Link to="/MoreInfo">About</Link>
+            </li>
+            <li>Works</li>
+            <li>Contacts</li>
+          </ul>
+          <div className="box"></div>
+        </div>
+        <div className=" backgroundDiv ">1</div>
+      </motion.div>
     </section>
   );
 }

@@ -12,14 +12,12 @@
   position: fixed;
   bottom: 0rem;
   right: 0rem;
-  height: 2rem;
-  background: lightcoral;
   z-index: 10;
   width: 100%;
 }
 .prechod1 {
   width: 100%;
-  background: rgb(199, 11, 246);
+  background: rgb(221, 221, 221);
   height: 150vh;
   position: absolute;
   top: 2rem;
@@ -28,7 +26,7 @@
 }
 .prechod2 {
   width: 100%;
-  background: rgb(102, 255, 0);
+  background: rgb(236, 236, 236);
   height: 150vh;
   position: absolute;
   top: 2rem;
@@ -37,10 +35,22 @@
 }
 .wrapperList {
   width: 100%;
-  background: rgb(7, 199, 173);
-  height: 100vh;
+  height: 110vh;
   position: absolute;
   top: 2rem;
   left: 0rem;
   z-index: 30;
+  background: #fff;
+}
+ul {
+  li {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}
+.backgroundDiv {
+  background-image: url("../../../images/moutains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

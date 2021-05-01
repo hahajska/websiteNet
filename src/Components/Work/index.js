@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/_Work.scss";
 import WorkItem from "./WorkItem";
+import WorkItemLeft from "./WorkItemLeft";
 
 export default function Work() {
   return (
@@ -11,7 +12,9 @@ export default function Work() {
         </div>
       </div>
       <WorkItem />
+      <WorkItemLeft />
       <WorkItem />
+      <WorkItemLeft />
     </section>
   );
 }

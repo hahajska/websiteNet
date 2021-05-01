@@ -1,0 +1,36 @@
+.infoSection {
+  .longImage {
+    height: 120vh;
+    position: relative;
+    img {
+      height: 115vh;
+    }
+  }
+  .infoText2 {
+    height: 40vh;
+    background: lightgray;
+  }
+}
+.textAbout {
+  min-height: 40vh;
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    text-align-last: right;
+  }
+  button {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 0.1rem 1.75rem;
+
+    &:hover {
+      background: black;
+      color: #fff;
+    }
+  }
+}
+.cara {
+  position: absolute;
+}

@@ -90,7 +90,7 @@ export default function NavbarButton() {
         initial="hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className=" menuList flex justify-center items-center text-center">
+        <div className="menuList flex justify-center items-center text-center">
           <ul>
             <li>Home</li>
             <li>

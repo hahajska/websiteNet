@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/_Footer.scss";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -12,7 +13,9 @@ export default function Footer() {
         <div className="fastLinks py-12 text-center">
           <ul>
             <li>Home</li>
-            <li>About</li>
+            <li>
+              <Link to="/MoreInfo">About</Link>
+            </li>
             <li>Works</li>
             <li>Contacts</li>
             <li>x</li>

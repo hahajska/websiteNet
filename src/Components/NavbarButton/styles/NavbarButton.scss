@@ -1,0 +1,46 @@
+.navbarButton_Wrapper {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  background: rgb(215, 215, 223);
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.sectionNav {
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  height: 2rem;
+  background: lightcoral;
+  z-index: 10;
+  width: 100%;
+}
+.prechod1 {
+  width: 100%;
+  background: rgb(199, 11, 246);
+  height: 150vh;
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  z-index: 15;
+}
+.prechod2 {
+  width: 100%;
+  background: rgb(102, 255, 0);
+  height: 150vh;
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  z-index: 20;
+}
+.wrapperList {
+  width: 100%;
+  background: rgb(7, 199, 173);
+  height: 100vh;
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  z-index: 30;
+}

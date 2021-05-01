@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import "./styles/NavbarButton.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import MountainImage from "../../images/moutains.jpg";
 
 export default function NavbarButton() {
   const [isActive, setIsActive] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleActive = ({}) => {
+  const handleActive = () => {
     setIsActive(!isActive);
   };
 

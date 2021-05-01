@@ -15,17 +15,3 @@ export default function Work() {
     </section>
   );
 }
-{
-  /* <section>
-<div className="nadpisWork col-span-5 text-center lg:text-right">
-  <h1 className="lg:pr-14">My Projects</h1>
-</div>
-<section className="workSection lg:container lg:mx-auto grid lg:grid-cols-6 md:grid-rows-3">
-  <div className="imageWork col-span-2 bg-red-300"></div>
-  <div className="textWork col-span-4 bg-red-100"></div>
-  <div className="imageWork col-span-4 bg-red-200"></div>
-  <div className="textWork col-span-2 bg-red-400"></div>
-  <div className="nadpisWork hidden lg:flex lg:col-span-1">x</div>
-</section>
-</section> */
-}

@@ -1,10 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import Mountains from "../../images/moutains.jpg";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import { TimelineLite, Power2, gsap } from "gsap";
+import { gsap } from "gsap";
+import { TimelineLite, Power2 } from "gsap";
+import CSSRulePlugin from "gsap/CSSRulePlugin";
 import "./styles/_Main.scss";
 
 export default function Main() {
+  gsap.registerPlugin(CSSRulePlugin);
+
   let image = useRef(null);
   let container = useRef(null);
   let imageReveal = CSSRulePlugin.getRule(".img-container:after");
@@ -19,7 +22,7 @@ export default function Main() {
       ease: Power2.easeInOut,
       delay: -1.4,
     });
-  }, []);
+  });
 
   return (
     <section className="mainSection lg:container lg:mx-auto grid lg:grid-cols-6 md:grid-rows-1">

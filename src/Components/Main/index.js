@@ -3,9 +3,9 @@ import { gsap } from "gsap";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import "./styles/_Main.scss";
-import Mountains from "../../images/Moutains.jpg";
 import { motion } from "framer-motion";
 import { ZkouskaAnimace, item } from "../Animations/MainAnim";
+import Mountains from "../../images/Moutains.jpg";
 
 export default function Main() {
   gsap.registerPlugin(CSSRulePlugin);

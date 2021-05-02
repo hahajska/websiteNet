@@ -22,7 +22,7 @@ export default function LiItems({ handleOff }) {
       </div>
 
       {/* bug here */}
-      <div className="backgroundDiv"></div>
+      <div className="backgroundDiv lg:flex hidden"></div>
     </>
   );
 }

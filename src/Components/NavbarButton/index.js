@@ -106,7 +106,7 @@ export default function NavbarButton() {
         onClick={() => setIsOpen(!isOpen)}
       ></motion.div>
       <motion.div
-        className="wrapperList grid grid-cols-2 "
+        className="wrapperList grid  lg:grid-cols-2 "
         variants={AnimaceNavbar3}
         animate={isActive ? "show" : "hidden"}
         initial="hidden"

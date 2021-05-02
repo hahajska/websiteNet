@@ -18,6 +18,9 @@
   }
   p {
     text-align-last: right;
+    @media (max-width: 1024px) {
+      text-align-last: center;
+    }
   }
   button {
     outline: none;

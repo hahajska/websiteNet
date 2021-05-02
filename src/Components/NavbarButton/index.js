@@ -12,6 +12,10 @@ export default function NavbarButton() {
     setIsActive(!isActive);
   };
 
+  const handleOff = () => {
+    setIsActive(!isActive);
+  };
+
   const AnimaceNavbar1 = {
     hidden: {
       x: 0,
@@ -89,7 +93,7 @@ export default function NavbarButton() {
         initial="hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <LiItems />
+        <LiItems handleOff={handleOff} />
       </motion.div>
     </section>
   );

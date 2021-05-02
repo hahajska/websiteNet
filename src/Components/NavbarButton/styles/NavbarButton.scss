@@ -2,11 +2,11 @@
   position: absolute;
   right: 2rem;
   bottom: 2rem;
-  background: rgb(215, 215, 223);
   height: 5rem;
   width: 5rem;
   cursor: pointer;
   z-index: 100;
+  background: red;
 }
 .sectionNav {
   position: fixed;
@@ -37,10 +37,10 @@
   width: 100%;
   height: 110vh;
   position: absolute;
-  top: -5rem;
+  top: 2rem;
   left: 0rem;
   z-index: 30;
-  background: rgb(0, 255, 128);
+  background: #fff;
 }
 ul {
   li {

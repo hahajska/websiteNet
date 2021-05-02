@@ -5,7 +5,7 @@ import Info from "./Components/Info";
 import Main from "./Components/Main";
 import Work from "./Components/Work";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MoreInfo from "./Components/MoreInfo";
+import MoreInfo from "./Components/pages/MoreInfo";
 import NavbarButton from "./Components/NavbarButton";
 import Loading from "./Components/Loading";
 

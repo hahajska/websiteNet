@@ -1,18 +1,18 @@
 import React from "react";
 import "./styles/_Work.scss";
-import WorkSmallImage from "../../images/Mountains.jpg";
+import WorkBigImage from "../../images/BigImage.jpg";
 
 export default function WorkItem() {
   return (
     <section className="workSection grid lg:grid-cols-6 md:grid-rows-1 gap-4">
       <div className="imageWork col-span-3 order-2 lg:order-1 p-5 flex xl:flex xl:justify-end xl:items-end  justify-center items-center">
         <img
-          src={WorkSmallImage}
+          src={WorkBigImage}
           loading="lazy"
           className="hidden xl:flex smallImage"
           alt="img"
         />
-        <img src={WorkSmallImage} className="bigImage" alt="img" />
+        <img src={WorkBigImage} className="bigImage" alt="img" />
       </div>
       <div className="textWork col-span-3 px-8 xl:px-16 flex-col flex xl:justify-center xl:items-start items-center justify-center order-1 lg:order-2 ">
         <h1>Portfolio</h1>

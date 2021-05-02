@@ -3,20 +3,20 @@ import "../../../App.scss";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Main from "../../Main";
 import Info from "../../Info";
 import Work from "../../Work";
 import Footer from "../../Footer";
 import MoreInfo from "../MoreInfo";
 
-import Loading from "../../Loading";
 import NavbarButton from "../../NavbarButton";
+import Main from "./Main";
+import Loading from "../Loading";
 
 export default function MainWeb() {
-  const [loading, setLoading] = useState(false); //true
+  const [loading, setLoading] = useState(true); //true
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 800); //2800
+    setTimeout(() => setLoading(false), 2800); //2800
   }, []);
 
   return (

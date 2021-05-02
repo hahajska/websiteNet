@@ -1,13 +1,15 @@
 import React, { useRef, useEffect } from "react";
 //images
-import Hory from "../../images/Moutains.jpg";
+import Hory from "../../images/Mountains.jpg";
 //animations
 import { gsap } from "gsap";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
+
 import { motion } from "framer-motion";
 import { ZkouskaAnimace, item } from "../Animations/MainAnim";
 //styles
+import "./styles/_Main.scss";
 
 export default function Main() {
   gsap.registerPlugin(CSSRulePlugin);

@@ -1,11 +1,13 @@
 import React, { useRef, useEffect } from "react";
+//images
+import Hory from "../../images/Moutains.jpg";
+//animations
 import { gsap } from "gsap";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-import "./styles/_Main.scss";
 import { motion } from "framer-motion";
 import { ZkouskaAnimace, item } from "../Animations/MainAnim";
-import Mountains from "../../images/Moutains.jpg";
+//styles
 
 export default function Main() {
   gsap.registerPlugin(CSSRulePlugin);
@@ -34,7 +36,7 @@ export default function Main() {
             <div className="img-container text-center">
               <img
                 ref={(el) => (image = el)}
-                src={Mountains}
+                src={Hory}
                 alt="img"
                 loading="lazy"
               />

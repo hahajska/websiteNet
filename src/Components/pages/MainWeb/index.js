@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "./App.scss";
-import Footer from "./Components/Footer";
-import Info from "./Components/Info";
-import Main from "./Components/Main";
-import Work from "./Components/Work";
+import "../../../App.scss";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MoreInfo from "./Components/pages/MoreInfo";
-import NavbarButton from "./Components/NavbarButton";
-import Loading from "./Components/Loading";
-import MainWeb from "./Components/pages/MainWeb";
 
-function App() {
-  return (
-    <>
-      <MainWeb />
-    </>
-  );
-}
+import Main from "../../Main";
+import Info from "../../Info";
+import Work from "../../Work";
+import Footer from "../../Footer";
+import MoreInfo from "../MoreInfo";
 
-export default App;
-/* function App() {
+import Loading from "../../Loading";
+import NavbarButton from "../../NavbarButton";
+
+export default function MainWeb() {
   const [loading, setLoading] = useState(false); //true
 
   useEffect(() => {
@@ -49,6 +42,3 @@ export default App;
     </>
   );
 }
-
-export default App;
- */

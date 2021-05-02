@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./styles/NavbarButton.scss";
 import { motion } from "framer-motion";
 import LiItems from "./LiItems";
+import { BsPlus } from "react-icons/bs";
 
 export default function NavbarButton() {
   const [isActive, setIsActive] = useState(false);
@@ -14,6 +15,19 @@ export default function NavbarButton() {
 
   const handleOff = () => {
     setIsActive(!isActive);
+  };
+
+  const AnimaceButton = {
+    hidden: {
+      opacity: 1,
+    },
+    show: {
+      rotate: 45,
+      transition: {
+        duration: 0.35,
+        ease: "easeInOut",
+      },
+    },
   };
 
   const AnimaceNavbar1 = {
@@ -66,12 +80,17 @@ export default function NavbarButton() {
 
   return (
     <section className="sectionNav">
-      <div
+      <motion.div
         className="navbarButton_Wrapper flex items-center justify-center"
         onClick={handleActive}
+        animate={isActive ? "show" : "hidden"}
+        variants={AnimaceButton}
+        initial="hidden"
       >
-        <h1>el</h1>
-      </div>
+        <h1>
+          <BsPlus />
+        </h1>
+      </motion.div>
       <motion.div
         className="prechod1"
         variants={AnimaceNavbar1}

@@ -1,13 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "./App.scss";
-import Footer from "./Components/Footer";
-import Info from "./Components/Info";
-import Main from "./Components/Main";
-import Work from "./Components/Work";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MoreInfo from "./Components/pages/MoreInfo";
-import NavbarButton from "./Components/NavbarButton";
-import Loading from "./Components/Loading";
+import React from "react";
 import MainWeb from "./Components/pages/MainWeb";
 
 function App() {

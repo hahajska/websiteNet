@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/NavbarButton.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -52,17 +52,6 @@ const LiItemAnimace4 = {
   },
 };
 
-const AnimaceBg = {
-  show: {
-    y: 0,
-    opacity: 1,
-  },
-  hidden: {
-    y: -500,
-    opacity: 0,
-  },
-};
-
 export default function LiItems() {
   return (
     <>
@@ -89,14 +78,14 @@ export default function LiItems() {
         </ul>
         <div className="box"></div>
       </div>
-      <motion.div
-        className="backgroundDiv"
-        variants={AnimaceBg}
-        initial="hidden"
-        animate="show"
-      >
-        1
-      </motion.div>
+      {/* bug here */}
+      {/* bug here */}
+      {/* bug here */}
+      {/* bug here */}
+      {/* bug here */}
+      {/* bug here */}
+      {/* bug here */}
+      <motion.div className="backgroundDiv"></motion.div>
     </>
   );
 }

@@ -10,7 +10,7 @@ import NavbarButton from "./Components/NavbarButton";
 import Loading from "./Components/Loading";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); //true
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 800); //2800

@@ -28,7 +28,7 @@ export default function Loading() {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center ">
+    <div className="h-screen flex justify-center items-center">
       <motion.h1
         className="loadingNadpis"
         variants={LoadingAnimace}

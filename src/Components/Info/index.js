@@ -5,8 +5,8 @@ import LongImage from "../../images/LongImage.jpg";
 export default function Info() {
   return (
     <section className="infoSection lg:container lg:mx-auto grid grid-cols-6">
-      <div className="cara"></div>
-      <div className="grid lg:col-span-4 col-span-6 grid-rows-2">
+      <div className="cara "></div>
+      <div className="grid lg:col-span-4 col-span-6 grid-rows-2 ">
         <div className="md:px-12 flex justify-center items-end  flex-col text-justify last-center textAbout">
           <h1>Something About Me</h1>
           <p className="md:pl-56 pl-0 px:12">

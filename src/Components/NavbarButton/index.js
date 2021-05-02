@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/NavbarButton.scss";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import LiItems from "./LiItems";
 
 export default function NavbarButton() {
   const [isActive, setIsActive] = useState(false);
@@ -89,18 +89,7 @@ export default function NavbarButton() {
         initial="hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="menuList flex justify-center items-center text-center">
-          <ul>
-            <li>Home</li>
-            <li>
-              <Link to="/MoreInfo">About</Link>
-            </li>
-            <li>Works</li>
-            <li>Contacts</li>
-          </ul>
-          <div className="box"></div>
-        </div>
-        <div className=" backgroundDiv ">1</div>
+        <LiItems />
       </motion.div>
     </section>
   );

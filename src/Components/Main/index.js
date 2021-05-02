@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from "react";
-import Mountains from "../../images/Moutains.jpg";
 import { gsap } from "gsap";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import "./styles/_Main.scss";
+import Mountains from "../../images/Moutains.jpg";
+import { motion } from "framer-motion";
+import { ZkouskaAnimace, item } from "../Animations/MainAnim";
 
 export default function Main() {
   gsap.registerPlugin(CSSRulePlugin);
@@ -41,15 +43,22 @@ export default function Main() {
         </div>
       </div>
       <div className="rightText lg:col-span-2 flex justify-start flex-column items-center lg:px-5 lg:py-2 py-40 px-5 ">
-        <div className="textBox px-2">
-          <h1>Name Surname</h1>
-          <span className="px-1">FE Developer</span>
-          <p className="px-1 pr-5 pt-5 text-left">
+        <motion.div
+          className="textBox px-2"
+          variants={ZkouskaAnimace}
+          animate="show"
+          initial="hidden"
+        >
+          <motion.h1 variants={item}>Name Surname</motion.h1>
+          <motion.span className="px-1" variants={item}>
+            FE Developer
+          </motion.span>
+          <motion.p className="px-1 pr-5 pt-5 text-left" variants={item}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
             doloremque dicta doloribus sunt iusto modi quisquam aut optio! Eum,
             ratione!
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );

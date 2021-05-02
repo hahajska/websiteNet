@@ -3,13 +3,14 @@ import "../../../App.scss";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Info from "../../Info";
-import Work from "../../Work";
 import Footer from "../../Footer";
 import MoreInfo from "../MoreInfo";
 
 import NavbarButton from "../../NavbarButton";
 import Main from "./Main";
+import Work from "./Work";
+import Info from "./Info";
+
 import Loading from "../Loading";
 
 export default function MainWeb() {

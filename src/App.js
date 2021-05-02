@@ -1,5 +1,5 @@
 import React from "react";
-import MainWeb from "./Components/pages/MainWeb";
+import MainWeb from "./pages/MainWeb";
 
 function App() {
   return (

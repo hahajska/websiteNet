@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/_Work.scss";
-import WorkBigImage from "../../../../images/BigImage.jpg";
+import WorkBigImage from "../../../images/BigImage.jpg";
 
 export default function WorkItem() {
   return (

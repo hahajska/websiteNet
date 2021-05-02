@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/_Info.scss";
-import LongImage from "../../../../images/LongImage.jpg";
+import LongImage from "../../../images/LongImage.jpg";
 
 export default function Info() {
   return (

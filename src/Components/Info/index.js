@@ -32,7 +32,7 @@ export default function Info() {
           <button className="mt-6">Contact Me</button>
         </div>
       </div>
-      <div className="longImage hidden lg:flex lg:col-span-2 flex items-center justify-center px-12">
+      <div className="longImage hidden lg:flex lg:col-span-2 items-center justify-center px-12">
         <img src={LongImage} alt="imagos" loading="lazy" />
       </div>
     </section>

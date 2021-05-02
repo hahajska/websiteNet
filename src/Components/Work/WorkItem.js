@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/_Work.scss";
-import WorkSmallImage from "../../images/moutains.jpg";
+import WorkSmallImage from "../../images/Moutains.jpg";
 
 export default function WorkItem() {
   return (

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Mountains from "../../images/moutains.jpg";
+import Mountains from "../../images/Moutains.jpg";
 import { gsap } from "gsap";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";

@@ -18,6 +18,7 @@ import Info from "./Info";
 import Loading from "../../Components/Loading";
 import About from "../About";
 import Contacts from "../Contacts";
+import HomeButton from "../../Components/HomeButton";
 
 export default function MainWeb() {
   const [loading, setLoading] = useState(false); //true
@@ -40,6 +41,7 @@ export default function MainWeb() {
     <>
       {loading === false ? (
         <Router>
+          <HomeButton />
           <NavbarButton />
           <Switch>
             <Route path="/" exact>

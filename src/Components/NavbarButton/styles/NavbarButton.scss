@@ -12,6 +12,9 @@
     font-size: 2rem;
     color: #fff;
   }
+  @media (max-width: 1140px) {
+    right: 0.5rem;
+  }
 }
 .sectionNav {
   position: fixed;

@@ -1,0 +1,18 @@
+.wrapperHomeButton {
+  position: fixed;
+  right: 2rem;
+  bottom: 5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  z-index: 100;
+  background: rgb(63, 63, 63);
+  border-radius: 50%;
+  h1 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  @media (max-width: 1140px) {
+    right: 0.5rem;
+  }
+}

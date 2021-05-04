@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   useLocation,
   withRouter,
 } from "react-router-dom";
@@ -16,9 +15,9 @@ import NavbarButton from "../../Components/NavbarButton";
 import Main from "./Main";
 import Work from "./Work";
 import Info from "./Info";
-import MoreInfo from "../MoreInfo";
 import Loading from "../../Components/Loading";
 import About from "../About";
+import Contacts from "../Contacts";
 
 export default function MainWeb() {
   const [loading, setLoading] = useState(false); //true
@@ -51,9 +50,9 @@ export default function MainWeb() {
                 <Footer />
               </ScrollToTop>
             </Route>
-            <Route path="/MoreInfo">
+            <Route path="/Contacts">
               <ScrollToTop>
-                <MoreInfo />
+                <Contacts />
               </ScrollToTop>
             </Route>
             <Route path="/About">

@@ -15,8 +15,9 @@ export default function LiItems({ handleOff }) {
           <li onClick={handleOff}>
             <Link to="/About">About </Link>
           </li>
-          <li onClick={handleOff}>Works</li>
-          <li onClick={handleOff}>Contacts</li>
+          <li onClick={handleOff}>
+            <Link to="/Contacts">Contacts</Link>
+          </li>
         </ul>
         <div className="box"></div>
       </div>

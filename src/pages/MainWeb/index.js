@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../../../src/App.scss";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useLocation,
+  withRouter,
+} from "react-router-dom";
 
 //fix
 import Footer from "../../Components/Footer";
@@ -20,6 +27,16 @@ export default function MainWeb() {
     setTimeout(() => setLoading(false), 2800); //2800
   }, []);
 
+  //return top positon when router
+  function _ScrollToTop(props) {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+    return props.children;
+  }
+  const ScrollToTop = withRouter(_ScrollToTop);
+
   return (
     <>
       {loading === false ? (
@@ -27,16 +44,22 @@ export default function MainWeb() {
           <NavbarButton />
           <Switch>
             <Route path="/" exact>
-              <Main />
-              <Info />
-              <Work />
-              <Footer />
+              <ScrollToTop>
+                <Main />
+                <Info />
+                <Work />
+                <Footer />
+              </ScrollToTop>
             </Route>
             <Route path="/MoreInfo">
-              <MoreInfo />
+              <ScrollToTop>
+                <MoreInfo />
+              </ScrollToTop>
             </Route>
             <Route path="/About">
-              <About />
+              <ScrollToTop>
+                <About />
+              </ScrollToTop>
             </Route>
           </Switch>
         </Router>

@@ -1,10 +1,12 @@
 import React from "react";
-import "./styles/Contacts.scss";
+import Footer from "../../Components/Footer";
+import CurrentContacts from "./CurrentContacts";
 
-export default function Contacts() {
+export default function About() {
   return (
     <>
-      <h1 className="bg-red-600">Contacts</h1>
+      <CurrentContacts />
+      <Footer />
     </>
   );
 }

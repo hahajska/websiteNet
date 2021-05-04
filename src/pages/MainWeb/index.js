@@ -10,10 +10,11 @@ import Main from "./Main";
 import Work from "./Work";
 import Info from "./Info";
 import MoreInfo from "../MoreInfo";
-import Loading from "../../Components/pages/Loading";
+import Loading from "../../Components/Loading";
+import About from "../About";
 
 export default function MainWeb() {
-  const [loading, setLoading] = useState(true); //true
+  const [loading, setLoading] = useState(false); //true
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2800); //2800
@@ -33,6 +34,9 @@ export default function MainWeb() {
             </Route>
             <Route path="/MoreInfo">
               <MoreInfo />
+            </Route>
+            <Route path="/About">
+              <About />
             </Route>
           </Switch>
         </Router>

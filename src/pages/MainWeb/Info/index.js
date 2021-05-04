@@ -7,7 +7,7 @@ export default function Info() {
     <section className="infoSection lg:container lg:mx-auto grid grid-cols-6">
       <div className="cara "></div>
       <div className="grid lg:col-span-4 col-span-6 grid-rows-2 ">
-        <div className="textAbout md:px-12 flex justify-start md:pt-24 px-5 py-12 lg:items-end items-center flex-col text-justify">
+        <div className="md:px-12 flex justify-start md:pt-24 px-5 pb-32 lg:items-end lg:justify-end items-center flex-col text-justify textAbout">
           <h1>Something About Me</h1>
           <p className="lg:pl-56 pl-0 px:12">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus

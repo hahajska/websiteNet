@@ -1,7 +1,7 @@
 .rightText {
   height: 100vh;
   @media (max-width: 1024px) {
-    height: max-content;
+    height: 40vh;
   }
   .textBox {
     height: max-content;
@@ -16,11 +16,12 @@
   }
 }
 .leftImage {
-  min-height: 100vh;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
   visibility: hidden;
+  @media (max-width: 1024px) {
+    height: 60vh;
+    padding-top: 3rem;
+  }
 }
 .img-container {
   width: max-content;
@@ -47,4 +48,7 @@
       width: 20rem;
     }
   }
+}
+.mainSection {
+  max-height: 100vh;
 }

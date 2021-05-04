@@ -14,11 +14,13 @@ export default function Footer() {
           <ul>
             <li>Home</li>
             <li>
-              <Link to="/MoreInfo">About</Link>
+              <Link to="/MoreInfo">More Info</Link>
             </li>
             <li>Works</li>
             <li>Contacts</li>
-            <li>x</li>
+            <li>
+              <Link to="/About">About</Link>
+            </li>
           </ul>
         </div>
       </div>

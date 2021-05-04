@@ -1,0 +1,19 @@
+.oneImageContainer {
+  height: 45vh;
+
+  .dlouhyImage {
+    height: 90%;
+    padding: 1rem;
+    width: max-content;
+    object-fit: cover;
+  }
+}
+.imageInfoContainer {
+  min-height: 55vh;
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    margin-top: -1rem;
+  }
+}

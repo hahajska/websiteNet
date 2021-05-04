@@ -31,9 +31,9 @@ export default function Main() {
   });
 
   return (
-    <section className="mainSection lg:container lg:mx-auto grid lg:grid-cols-6 md:grid-rows-1">
-      <div className="leftImage lg:col-span-4 sm:order-first order-last">
-        <div ref={(el) => (container = el)} className="container">
+    <section className="mainSection lg:container lg:mx-auto grid lg:grid-cols-6 md:grid-rows-1  ">
+      <div className="leftImage lg:col-span-4 lg:order-first order-last flex lg:justify-center lg:items-center items-start">
+        <div ref={(el) => (container = el)}>
           <>
             <div className="img-container text-center">
               <img
@@ -46,7 +46,7 @@ export default function Main() {
           </>
         </div>
       </div>
-      <div className="rightText lg:col-span-2 flex justify-start flex-column items-center lg:px-5 lg:py-2 py-40 px-5 ">
+      <div className="rightText lg:col-span-2 flex justify-start flex-column lg:items-center items-end lg:px-5 lg:py-2 px-5 ">
         <motion.div
           className="textBox px-2"
           variants={ZkouskaAnimace}

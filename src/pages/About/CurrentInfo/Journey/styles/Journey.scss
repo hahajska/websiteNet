@@ -1,0 +1,32 @@
+.journeyDiv {
+  height: max-content;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+.journeyItem {
+  height: max-content;
+  .nadpis {
+    font-size: 1.65rem;
+  }
+  .datum {
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+  }
+  .journeyText {
+    text-align-last: center;
+  }
+}
+.videoMountains {
+  height: 150vh;
+  width: 30rem;
+  @media (max-width: 1279px) {
+    height: 75vh;
+    width: 50rem;
+  }
+  @media (max-width: 900px) {
+    height: 50vh;
+    width: 30rem;
+  }
+}

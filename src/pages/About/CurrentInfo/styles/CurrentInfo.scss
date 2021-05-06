@@ -11,9 +11,18 @@
 .imageInfoContainer {
   min-height: 55vh;
   h1 {
-    font-size: 7rem;
+    font-size: 13vw;
   }
   p {
     margin-top: -1rem;
+  }
+}
+.infoDiv {
+  h1 {
+    font-size: 2rem;
+  }
+  padding: 3rem 0rem;
+  p {
+    text-align-last: center;
   }
 }

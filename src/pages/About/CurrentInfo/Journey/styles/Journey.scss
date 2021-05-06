@@ -15,7 +15,9 @@
     margin-top: -0.5rem;
   }
   .journeyText {
-    text-align-last: center;
+    @media (max-width: 1279px) {
+      text-align-last: center;
+    }
   }
 }
 .videoMountains {

@@ -43,7 +43,10 @@ export default function Journey() {
       <div className="px-8 py-24 flex justify-center items-center flex-col">
         {JourneyData.map((item, id) => {
           return (
-            <div key={id} className="journeyItem xl:py-24 py-8 text-center">
+            <div
+              key={id}
+              className="journeyItem xl:py-24 py-8 xl:text-justify text-center"
+            >
               <h2 className="nadpis">{item.title}</h2>
               <h4 className="datum">{item.date}</h4>
               <p className="journeyText xl:pr-40 lg:pr-20 pr-6 text-justify">

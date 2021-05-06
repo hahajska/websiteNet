@@ -34,13 +34,13 @@ export default function NavbarButton() {
     hidden: {
       x: 0,
       y: 0,
-      transition: { duration: 1.35, ease: "easeInOut" },
+      transition: { duration: 1, ease: "easeInOut" },
     },
     show: {
       x: 0,
       y: "-110vh",
       transition: {
-        duration: 0.75,
+        duration: 0.65,
         ease: "easeInOut",
       },
     },
@@ -49,14 +49,14 @@ export default function NavbarButton() {
     hidden: {
       x: 0,
       y: 0,
-      transition: { duration: 1.35, ease: "easeInOut" },
+      transition: { duration: 1, ease: "easeInOut" },
     },
     show: {
       x: 0,
       y: "-110vh",
       transition: {
         delay: 0.45,
-        duration: 0.75,
+        duration: 0.65,
         ease: "easeInOut",
       },
     },
@@ -65,14 +65,14 @@ export default function NavbarButton() {
     hidden: {
       x: 0,
       y: 0,
-      transition: { duration: 1.35, ease: "easeInOut" },
+      transition: { duration: 1, ease: "easeInOut" },
     },
     show: {
       x: 0,
       y: "-110vh",
       transition: {
         delay: 0.9,
-        duration: 0.75,
+        duration: 0.65,
         ease: "easeInOut",
       },
     },

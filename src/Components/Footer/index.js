@@ -1,55 +1,38 @@
 import React from "react";
 import "./styles/_Footer.scss";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import { BiUpArrowAlt } from "react-icons/bi";
 
-const FooterData = [
-  { id: 1, data: "Github" },
-  { id: 2, data: "tomasschlogl@email.cz" },
-  { id: 3, data: "Linkedin" },
-  { id: 4, data: "Czech Republic" },
-  { id: 5, data: "Copyright 2021. All Rights Reserved." },
-  { id: 6, data: "Instagram" },
-  { id: 7, data: "Facebook" },
-  { id: 8, data: "Back To Top" },
-];
+const scrollTopFunkce = () => {
+  window.scrollTo(0, 0);
+};
 
 export default function Footer() {
   return (
-    <section className="sectionFooter lg:container lg:mx-auto">
-      <div className=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 pt-36">
-        {FooterData.map((item) => {
-          return (
-            <div className="listData flex justify-center items-center md:p-0 py-4 px-2 text-center">
-              <p>{item.data}</p>
-            </div>
-          );
-        })}
+    <section className="sectionFooter mt-72 lg:container lg:mx-auto">
+      <div className="flex lg:justify-start justify-center items-center nadpisFooter col-span-2 lg:col-span-1 border-b-2  border-gray-400">
+        {/*         <h2>Get in touch with me</h2> */}
       </div>
-      <div className="bigFooterText text-center">
-        <h1>GET IN TOUCH</h1>
-        <h2>WITH ME</h2>
+      <div className=" infoFooter grid  grid-cols-1 lg:grid-cols-2">
+        <div className="md:text-justify text-center flex justify-center items-center linksFooter">
+          <ul>
+            <li>Github</li>
+            <li>Facebook</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+        <div className="flex text-center justify-center items-center flex-col  pb-16 lg:pb-0">
+          <p className="xl:px-32 lg:px:24 px-16">
+            " Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam minima eius quisquam iste delectus debitis! Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Beatae, necessitatibus?
+            "
+          </p>
+          <button className="mt-12" onClick={scrollTopFunkce}>
+            <BiUpArrowAlt />
+          </button>
+        </div>
       </div>
     </section>
   );
-}
-{
-  /* <div className="footerInfo flex items-center justify-center">
-<h1>This page is under construction!</h1>
-</div>
-
-<div className="leftLinksDiv flex justify-center order-first lg:order-2">
-<div className="fastLinks py-12 text-center">
-  <ul>
-    <li>Home</li>
-    <li>
-      <Link to="/MoreInfo">More Info</Link>
-    </li>
-    <li>Works</li>
-    <li>Contacts</li>
-    <li>
-      <Link to="/About">About</Link>
-    </li>
-  </ul>
-</div>
-</div> */
 }

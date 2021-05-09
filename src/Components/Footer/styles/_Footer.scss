@@ -1,13 +1,35 @@
 .sectionFooter {
-  .bigFooterText {
+  /*   .bigFooterText {
     h1 {
-      font-size: 7vw;
-      font-weight: bold;
+      padding: 1rem 2rem;
+      font-size: 3vw;
+      font-weight: bolder;
+      letter-spacing: -1.25px;
+      color: #0c0c0c;
+      word-spacing: 7px;
     }
-    h2 {
-      margin-top: -5vw;
-      font-weight: bold;
-      font-size: 7vw;
+  } */
+  .infoFooter {
+    height: max-content;
+    .linksFooter {
+      height: 40vh;
+      ul {
+        line-height: 4.5rem;
+        li {
+          font-size: 1.35rem;
+        }
+      }
+    }
+    div {
+      button {
+        background: rgb(63, 63, 63);
+        font-size: 1rem;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 100%;
+        border: none;
+        outline-style: none;
+      }
     }
   }
 }

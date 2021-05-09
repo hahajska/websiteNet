@@ -4,9 +4,9 @@ import CurrentContacts from "./CurrentContacts";
 
 export default function About() {
   return (
-    <>
+    <div>
       <CurrentContacts />
       <Footer />
-    </>
+    </div>
   );
 }

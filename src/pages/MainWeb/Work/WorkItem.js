@@ -9,9 +9,10 @@ export default function WorkItem() {
         <img
           src={WorkBigImage}
           loading="lazy"
-          className="hidden xl:flex smallImage"
+          className="hidden xl:flex smallImage z-50"
           alt="img"
         />
+
         <img src={WorkBigImage} className="bigImage" alt="img" />
       </div>
       <div className="textWork col-span-3 px-8 xl:px-16 flex-col flex xl:justify-center xl:items-start items-center justify-center order-1 lg:order-2 ">
@@ -23,6 +24,7 @@ export default function WorkItem() {
           consectetur adipisicing elit. Reiciendis libero nemo dolorem natus a
           sequi debitis nesciunt expedita ipsa iste.
         </p>
+        <button className="mt-4">Explore</button>
       </div>
     </section>
   );

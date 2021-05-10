@@ -28,6 +28,7 @@
   position: relative;
   overflow: hidden;
   height: 100%;
+
   @media (max-width: 780px) {
     width: max-content;
   }
@@ -44,7 +45,14 @@
     width: 50vw;
     margin: 0 auto;
     height: 100%;
-    @media (max-width: 780px) {
+
+    @media (min-width: 781px) and (max-width: 1024px) {
+      width: 42rem;
+    }
+    @media (min-width: 580px) and (max-width: 780px) {
+      width: 30rem;
+    }
+    @media (min-width: 100px) and (max-width: 579px) {
       width: 20rem;
     }
   }

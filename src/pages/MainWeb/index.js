@@ -21,7 +21,7 @@ import Contacts from "../Contacts";
 import HomeButton from "../../Components/HomeButton";
 
 export default function MainWeb() {
-  const [loading, setLoading] = useState(false); //true
+  const [loading, setLoading] = useState(true); //true
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2800); //2800
@@ -39,12 +39,13 @@ export default function MainWeb() {
 
   return (
     <>
-      {loading === false ? (
+      {loading ? (
+        <Loading />
+      ) : (
         <Router>
-          <HomeButton />
           <NavbarButton />
           <Switch>
-            <Route path="/" exact>
+            <Route exact path="/">
               <ScrollToTop>
                 <Main />
                 <Info />
@@ -54,18 +55,18 @@ export default function MainWeb() {
             </Route>
             <Route path="/Contacts">
               <ScrollToTop>
+                <HomeButton />
                 <Contacts />
               </ScrollToTop>
             </Route>
             <Route path="/About">
               <ScrollToTop>
+                <HomeButton />
                 <About />
               </ScrollToTop>
             </Route>
           </Switch>
         </Router>
-      ) : (
-        <Loading />
       )}
     </>
   );

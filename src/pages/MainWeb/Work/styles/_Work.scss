@@ -5,6 +5,18 @@
     @media (max-width: 1024px) {
       height: max-content;
     }
+    button {
+      outline: none;
+      border: 0.5px solid rgb(41, 41, 41);
+      border-radius: 3px;
+      padding: 0.1rem 1.75rem;
+      font-size: 0.95rem;
+
+      &:hover {
+        background: rgb(41, 41, 41);
+        color: #fff;
+      }
+    }
     h1 {
       font-size: 2rem;
       margin-bottom: -0.75rem;
@@ -45,4 +57,10 @@
     letter-spacing: -0.5vw;
     color: rgb(245, 245, 245);
   }
+}
+.conImage {
+  position: relative;
+  overflow: hidden;
+  margin: 0rem 1rem;
+  height: 90%;
 }

@@ -4,6 +4,7 @@
     position: relative;
     img {
       height: 115vh;
+      object-fit: cover;
     }
   }
   .infoText2 {
@@ -24,12 +25,12 @@
   }
   button {
     outline: none;
-    border: 1px solid black;
-    border-radius: 7px;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 3px;
     padding: 0.1rem 1.75rem;
 
     &:hover {
-      background: black;
+      background: rgb(41, 41, 41);
       color: #fff;
     }
   }

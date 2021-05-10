@@ -14,6 +14,7 @@ export default function WorkItem() {
           consectetur adipisicing elit. Reiciendis libero nemo dolorem natus a
           sequi debitis nesciunt expedita ipsa iste.
         </p>
+        <button className="mt-4">Explore</button>
       </div>
 
       <div className="imageWork col-span-3 p-5 flex justify-center items-center xl:flex xl:justify-start xl:items-end">

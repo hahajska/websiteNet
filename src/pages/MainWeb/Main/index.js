@@ -53,11 +53,13 @@ export default function Main() {
           animate="show"
           initial="hidden"
         >
-          <motion.h1 variants={item}>Name Surname</motion.h1>
-          <motion.span className="px-1" variants={item}>
+          <motion.h1 variants={item} className="px-2">
+            Tomas Schlögl
+          </motion.h1>
+          <motion.span className="px-3" variants={item}>
             FE Developer
           </motion.span>
-          <motion.p className="px-1 pr-5 pt-5 text-left" variants={item}>
+          <motion.p className="px-3 pt-5 text-left" variants={item}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
             doloremque dicta doloribus sunt iusto modi quisquam aut optio! Eum,
             ratione!
